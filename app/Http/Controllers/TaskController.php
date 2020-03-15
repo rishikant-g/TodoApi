@@ -14,7 +14,7 @@ class TaskController extends Controller
      */
     public function index()
     {
-        return response()->json(['status' => true , 'message' => Task::all(),'count'=>Task::count(),'code'=> 200]);
+        return response()->json(['status' => true , 'message' => Task::orderBy('id','DESC')->get(),'count'=>Task::count(),'code'=> 200]);
     }
 
    
@@ -31,12 +31,13 @@ class TaskController extends Controller
             Task::create([
                 'task_title' => $request->task_title
             ]);
-             return response()->json(['status' => true, 'message' => "Task Added","code" => 200,'count'=>Task::count()]);
+             return response()->json(['status' => true, 'message' => "Task Added","code" => 201,'count'=>Task::count()]);
            }
            catch(\Exception $ex){
             return response()->json(['status' => false, "code" => 422,'message' => $ex->getMessage()]);
            }
     }
+
 
 
     /**
@@ -70,7 +71,7 @@ class TaskController extends Controller
         try{
             Task::findOrFail($id);
             Task::find($id)->delete();
-             return response()->json(['status' => true, 'message' => "Task Deleted","code" => 200,'count'=>Task::count()]);
+             return response()->json(['status' => true, 'message' => "Task Deleted","code" => 204,'count'=>Task::count()]);
         }
         catch(\Exception $ex){
             return response()->json(['status'=> false, 'message' => 'Task id not found' ,'code' => 404]);

@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
 Route::get('/showall','TaskController@index');
 Route::post('/store','TaskController@store');
-Route::get('/update/{id}','TaskController@update');
+Route::put('/update/{id}','TaskController@update');
 Route::delete('/delete/{id}','TaskController@destroy');
