@@ -1,0 +1,157 @@
+{
+	"id": "1bdcbca1-9a44-dd68-1fb9-4cdc872551d8",
+	"name": "TodoApi 15-03-20",
+	"description": "",
+	"order": [
+		"eeb2948d-29aa-b528-ab4f-6193835d85d3",
+		"d0195ce2-4ca9-a649-c1f0-b80bc1fe627e",
+		"4cbbdc57-432d-9079-a348-17f5f3d3d22b",
+		"a1ba3937-770a-bf17-7eb4-2ae321405c91"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1584260107998,
+	"owner": "6844450",
+	"public": false,
+	"requests": [
+		{
+			"id": "4cbbdc57-432d-9079-a348-17f5f3d3d22b",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/update/6",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1584261237799,
+			"name": "Update",
+			"description": "",
+			"collectionId": "1bdcbca1-9a44-dd68-1fb9-4cdc872551d8",
+			"responses": [],
+			"rawModeData": "{\n\t\"task_title\" : \"Testing\"\n}"
+		},
+		{
+			"id": "a1ba3937-770a-bf17-7eb4-2ae321405c91",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/delete/6",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1584261251106,
+			"name": "Delete",
+			"description": "",
+			"collectionId": "1bdcbca1-9a44-dd68-1fb9-4cdc872551d8",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "d0195ce2-4ca9-a649-c1f0-b80bc1fe627e",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/store",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1584261229212,
+			"name": "Store",
+			"description": "",
+			"collectionId": "1bdcbca1-9a44-dd68-1fb9-4cdc872551d8",
+			"responses": [],
+			"rawModeData": "{\n\t\"task_title\" : \"ABCDEF\"\n}"
+		},
+		{
+			"id": "eeb2948d-29aa-b528-ab4f-6193835d85d3",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/showall",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1584260348826,
+			"name": "GetAllData",
+			"description": "",
+			"collectionId": "1bdcbca1-9a44-dd68-1fb9-4cdc872551d8",
+			"responses": []
+		}
+	]
+}
